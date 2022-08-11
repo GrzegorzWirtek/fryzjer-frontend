@@ -73,6 +73,11 @@
     background-color: $home-bcg-button-color;
     transition: background-color $transition-time;
 
+    &--tel{
+      display: flex;
+      justify-content: center;
+    }
+
     &:hover{
       background-color: $home-bcg-button-color-hover;
     }
@@ -80,6 +85,12 @@
     @media(min-width: $min-width-desktop){
       flex-basis: 49%;
     }
+  }
+
+  &__tel-icon{
+    width: 22px;
+    margin-right: 10px;
+    filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(100deg) brightness(111%) contrast(101%);
   }
 
 }

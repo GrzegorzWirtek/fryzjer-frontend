@@ -10,9 +10,10 @@ const Home = () => {
 				<NavLink className='home__link' to='/pricelist'>
 					Cennik
 				</NavLink>
-				<NavLink className='home__link' to='/contact'>
-					Kontakt
-				</NavLink>
+				<a href='tel: 506189914' className='home__link home__link--tel'>
+					<img src='icons/phone.svg' alt='' className='home__tel-icon' />
+					506-189-914
+				</a>
 			</section>
 		</main>
 	);
