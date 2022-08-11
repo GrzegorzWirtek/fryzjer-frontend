@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@200;300;400;500;600;700;800&family=Lobster&display=swap');
+
+$font-family-1: 'Kanit', sans-serif;
+$font-family-2: 'Lobster', cursive;
+
+$bcg-transition: 0.2s;
+$transition-time: 0.2s;
+
+$font-size-5: 1.6rem;
+
+$min-width-desktop: 800px;
+
+//NAV
+$nav-hover-color: grey;
+
+//BUTTON
+$button-padding-horizontal: 7px;
+$button-padding-vertical: 20px;
+$button-color-1: rgb(36, 25, 46);
+$button-color-1-hover: rgb(64, 47, 80);
+$button-width: 200px;
+
+
+//HOME
+$title-font-size-mobile: 3.2rem;
+$title-font-size: 4.6rem;
+
+$subtitle-font-size-mobile: 0.8rem;
+$subtitle-font-size: 0.9rem;
+
+$subtitle-letter-spacing-mobile: 2.5px;
+$subtitle-letter-spacing: 6px;
+
+$home-bcg-button-color: rgba(0, 0, 0, 0.467);
+$home-bcg-button-color-hover: #332b5d;
+
+//PRICELIST
+$service-max-width: 800px;
+$edit-icon-height: 25px;
+
+//CONTACT
+$phone-icon-width: 30px;

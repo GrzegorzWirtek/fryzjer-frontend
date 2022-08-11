@@ -1,0 +1,85 @@
+@import '../../../sass/variablex.scss';
+
+
+.home{
+  position: relative;
+  display: flex;
+  height:100vh;
+  background-color: black;
+  background-image: url('../../../../public/images/header-mobile.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+
+  @media(min-width: $min-width-desktop){
+    background-image: url('../../../../public/images/header.png');
+  }
+
+  &__text-wrapper{
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 305px;
+
+    @media(min-width: $min-width-desktop){
+      top: 20vh;
+      left: 20%;
+      transform: translate(0,0);
+      width: 440px;
+    }
+  }
+
+  &__title{
+    flex-basis: 100%;
+    font-family: $font-family-2;
+    font-size: $title-font-size-mobile;
+    color: white;
+
+    @media(min-width: $min-width-desktop){
+      font-size: $title-font-size;
+    }
+  }
+
+  &__subtitle{
+    flex-basis: 100%;
+    font-family: $font-family-1;
+    font-size: $subtitle-font-size-mobile;
+    letter-spacing: $subtitle-letter-spacing-mobile;
+    text-transform: uppercase;
+    color: white;
+    line-height: 2.2;
+    margin-bottom: 30px;
+
+    @media(min-width: $min-width-desktop){
+      font-size: $subtitle-font-size;
+      letter-spacing: $subtitle-letter-spacing;
+    }
+  }
+
+  &__link{
+    flex-basis: 100%;
+    width: 46%;
+    margin-bottom: 20px;
+    outline: none;
+    padding: 3px 0;
+    text-decoration: none;
+    color: white;
+    border: 2px solid white;
+    background-color: $home-bcg-button-color;
+    transition: background-color $transition-time;
+
+    &:hover{
+      background-color: $home-bcg-button-color-hover;
+    }
+
+    @media(min-width: $min-width-desktop){
+      flex-basis: 49%;
+    }
+  }
+
+}
