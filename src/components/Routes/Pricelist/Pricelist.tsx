@@ -31,11 +31,18 @@ const Pricelist = () => {
 		<div key={item._id} className='service'>
 			<p className='service__index'>{index + 1}.</p>
 			<p className='service__title'>{item.text}</p>
-			<p className='service__price'>{item.price}</p>
+			<p className='service__price'>{item.price} zł</p>
 		</div>
 	));
 
-	return <section className='pracelist'>{prices}</section>;
+	return (
+		<section className='pricelist'>
+			<div className='pricelist__wrapper'>
+				<h2 className='pricelist__title'>Cennik</h2>
+				{prices}
+			</div>
+		</section>
+	);
 };
 
 export default Pricelist;

@@ -27,25 +27,26 @@ const Contact = () => {
 	const { street, buildingNr, apartmentNr, zipCode, city, info, tel } =
 		contactData;
 
-	const telString = `${String(tel).slice(0, 3)}-${String(tel).slice(
+	const telToString = `${String(tel).slice(0, 3)}-${String(tel).slice(
 		3,
 		6,
 	)}-${String(tel).slice(6, 9)}`;
 
-	const zipCodeString = `${String(zipCode)
+	const zipCodeToString = `${String(zipCode)
 		.padStart(5, '0')
 		.slice(0, 2)}-${String(zipCode).padStart(5, '0').slice(2, 5)}`;
 
 	return (
 		<section className='contact'>
 			{contactData.city.length ? (
-				<>
+				<div className='contact__wrapper'>
+					<h2 className='contact__title'>Kontakt</h2>
 					<p className='contact__street'>
 						ul. {street} {buildingNr} lok.
 						{apartmentNr}
 					</p>
 					<p className='contact__city'>
-						{zipCodeString} {city}
+						{zipCodeToString} {city}
 					</p>
 					<p className='contact__info'>{info}</p>
 					<a href={`tel:${tel}`} className='contact__phone'>
@@ -54,9 +55,9 @@ const Contact = () => {
 							alt='Phone icon'
 							className='contact__phone-img'
 						/>
-						<p className='contact__phone-nr'>{telString}</p>
+						<p className='contact__phone-nr'>{telToString}</p>
 					</a>
-				</>
+				</div>
 			) : null}
 		</section>
 	);

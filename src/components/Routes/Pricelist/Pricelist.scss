@@ -1,46 +1,53 @@
 @import '../../../sass/variablex.scss';
 
+.pricelist{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  min-height: 100vh;
+  background-image: url('../../../../public/images/pricelist-mobile.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media(min-width: $min-width-desktop){
+    background-image: url('../../../../public/images/pricelist.png');
+  }
+
+  &__wrapper{
+    @include blur-area();
+    position: relative;
+    width: 96%;
+    max-width: $service-max-width;
+  }
+
+  &__title{
+    color: white;
+    font-size: $font-size-5;
+  }
+}
+
 .service{
   display: flex;
-  align-items: center;
-  width: 100%;
-  max-width: $service-max-width;
-  margin: 0 auto;
+  padding: 10px 0;
 
   &__index{
     width: 30px;
     text-align: left;
+    color: white;
   }
 
   &__title{
-    flex-basis: 70%;
+    flex-basis: 80%;
     text-align: left;
+    color: white;
   }
 
   &__price{
-    flex-basis: 15%;
-  }
-
-  &__edit-icon{
-    height: $edit-icon-height;
-    margin-right: 10px;
-    transform: translateY(-3px);
-    transition: $transition-time;
-    cursor: pointer;
-
-    &:hover{
-      filter: invert(64%) sepia(1%) saturate(2953%) hue-rotate(318deg) brightness(79%) contrast(91%);
-    }
-  }
-
-  &__delete-icon{
-    height: $edit-icon-height + 1;
-    transition: $transition-time;
-    transform: translateY(-1px);
-    cursor: pointer;
-
-    &:hover{
-      filter: invert(64%) sepia(1%) saturate(2953%) hue-rotate(318deg) brightness(79%) contrast(91%);
-    }
+    flex-basis: 20%;
+    color: white;
+    text-align: right;
   }
 }

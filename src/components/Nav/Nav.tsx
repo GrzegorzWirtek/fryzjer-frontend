@@ -18,6 +18,9 @@ const Nav = () => {
 		<>
 			<Ham hamActive={hamActive} toggleHam={toggleHam} />
 			<nav className={`nav ${hamActive ? 'nav--active' : ''}`}>
+				<NavLink className={'nav__link'} to='/' onClick={closeHam}>
+					Strona główna
+				</NavLink>
 				<NavLink className={'nav__link'} to='/pricelist' onClick={closeHam}>
 					Cennik
 				</NavLink>

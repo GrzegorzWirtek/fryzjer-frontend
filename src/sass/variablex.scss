@@ -6,7 +6,7 @@ $font-family-2: 'Lobster', cursive;
 $bcg-transition: 0.2s;
 $transition-time: 0.2s;
 
-$font-size-5: 1.6rem;
+$font-size-5: 2rem;
 
 $min-width-desktop: 800px;
 
@@ -40,8 +40,25 @@ $home-bcg-button-color: rgba(0, 0, 0, 0.467);
 $home-bcg-button-color-hover: #332b5d;
 
 //PRICELIST
-$service-max-width: 800px;
+$service-max-width: 700px;
 $edit-icon-height: 25px;
 
 //CONTACT
-$phone-icon-width: 30px;
+$contact-max-width: 500px;
+$contact-item-margin-bottom: 5px;
+$contact-title-margin-bottom: 20px;
+$phone-icon-width: 26px;
+$phone-font-size: 1.5rem;
+$phone-color: #ffa500;
+$phone-color-svg-filter: invert(77%) sepia(31%) saturate(6988%) hue-rotate(1deg) brightness(104%) contrast(105%);
+
+@mixin blur-area {
+  padding: 40px 25px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.231);
+  backdrop-filter: blur(7px);
+  -webkit-box-shadow: 5px 5px 13px 1px rgba(0, 0, 0, 0.69);
+  -moz-box-shadow: 5px 5px 13px 1px rgba(0, 0, 0, 0.69);
+  box-shadow: 5px 5px 13px 1px rgba(0, 0, 0, 0.69);
+}
