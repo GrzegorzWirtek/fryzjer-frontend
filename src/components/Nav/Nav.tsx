@@ -21,7 +21,7 @@ const Nav = () => {
 				<NavLink className={'nav__link'} to='/' onClick={closeHam}>
 					Strona główna
 				</NavLink>
-				<NavLink className={'nav__link'} to='/pricelist' onClick={closeHam}>
+				<NavLink className={'nav__link'} to='/services' onClick={closeHam}>
 					Cennik
 				</NavLink>
 				<NavLink className={'nav__link'} to='/contact' onClick={closeHam}>
