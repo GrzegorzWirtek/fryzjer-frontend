@@ -1,5 +1,4 @@
 import { createContext } from 'react';
-import { contactDataType } from './api/index';
 
 export type serviceType = {
 	_id: number;
@@ -7,9 +6,22 @@ export type serviceType = {
 	price: number;
 };
 
+export type contactType = {
+	street: string;
+	buildingNr: number;
+	apartmentNr: number;
+	zipCode: string;
+	city: string;
+	info: string;
+	tel: string;
+};
+
+export type galeryType = string[];
+
 const initialState = {
 	services: [] as serviceType[],
-	contact: {} as contactDataType,
+	contact: {} as contactType,
+	galery: [] as galeryType,
 };
 
 const AppContext = createContext(initialState);

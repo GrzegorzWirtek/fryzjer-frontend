@@ -18,7 +18,7 @@ const Home = () => {
 			<section className='home__text-wrapper'>
 				<h1 className='home__title'>Fryzjer Męski</h1>
 				<p className='home__subtitle'>Twoje włosy w dobrych rękach</p>
-				<NavLink className='home__link' to='/pricelist'>
+				<NavLink className='home__link' to='/services'>
 					Cennik
 				</NavLink>
 				<a href='tel: 506189914' className='home__link home__link--tel'>

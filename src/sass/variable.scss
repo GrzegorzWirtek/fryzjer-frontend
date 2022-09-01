@@ -18,13 +18,15 @@ $ham-width: 38px;
 $ham-height: 20px;
 $ham-item-height: 2px;
 
+//HEADER
+$header-height: 68px;
+
 //BUTTON
 $button-padding-horizontal: 7px;
 $button-padding-vertical: 20px;
 $button-color-1: rgb(36, 25, 46);
 $button-color-1-hover: rgb(64, 47, 80);
 $button-width: 200px;
-
 
 //HOME
 $title-font-size-mobile: 3.2rem;
@@ -51,6 +53,9 @@ $phone-icon-width: 26px;
 $phone-font-size: 1.5rem;
 $phone-color: #ffa500;
 $phone-color-svg-filter: invert(77%) sepia(31%) saturate(6988%) hue-rotate(1deg) brightness(104%) contrast(105%);
+
+//GALERY
+$galery-bcg-color: black;
 
 @mixin blur-area {
   padding: 40px 25px;

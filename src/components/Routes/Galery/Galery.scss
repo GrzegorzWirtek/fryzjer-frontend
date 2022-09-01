@@ -1,0 +1,16 @@
+@import '../../../sass/variable.scss';
+
+.galery{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  padding: calc($header-height + 50px) 10px 0 10px;
+  background-color: $galery-bcg-color;
+
+  &__image{
+    max-width: 96vw;
+    margin: 20px;
+  }
+}
