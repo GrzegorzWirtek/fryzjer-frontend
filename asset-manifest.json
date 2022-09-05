@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/fryzjer-frontend/static/css/main.6a929d0d.css",
+    "main.js": "/fryzjer-frontend/static/js/main.71316618.js",
+    "static/media/contact.png": "/fryzjer-frontend/static/media/contact.ba0582d7c8cf2181cf97.png",
+    "static/media/pricelist.png": "/fryzjer-frontend/static/media/pricelist.c6b83d4775486e8f3179.png",
+    "static/media/header.png": "/fryzjer-frontend/static/media/header.f3dd3c8ab8842df1ab68.png",
+    "static/media/contact-mobile.png": "/fryzjer-frontend/static/media/contact-mobile.9f541511f883519ba737.png",
+    "static/media/pricelist-mobile.png": "/fryzjer-frontend/static/media/pricelist-mobile.0687a3e950331ca6eee6.png",
+    "static/media/header-mobile.png": "/fryzjer-frontend/static/media/header-mobile.a8ecb022635589c370e5.png",
+    "index.html": "/fryzjer-frontend/index.html",
+    "main.6a929d0d.css.map": "/fryzjer-frontend/static/css/main.6a929d0d.css.map",
+    "main.71316618.js.map": "/fryzjer-frontend/static/js/main.71316618.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6a929d0d.css",
+    "static/js/main.71316618.js"
+  ]
+}
