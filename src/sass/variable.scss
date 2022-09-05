@@ -55,7 +55,8 @@ $phone-color: #ffa500;
 $phone-color-svg-filter: invert(77%) sepia(31%) saturate(6988%) hue-rotate(1deg) brightness(104%) contrast(105%);
 
 //GALERY
-$galery-bcg-color: black;
+$galery-bcg-color: linear-gradient(153deg, rgba(61,56,53,1) 0%, rgba(18,18,17,1) 100%);
+
 
 @mixin blur-area {
   padding: 40px 25px;

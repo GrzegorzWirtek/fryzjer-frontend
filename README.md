@@ -1,46 +1,33 @@
-# Getting Started with Create React App
+# Hair Salon static website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Static hair salon website using data pulled from backend deployed on Heroku and images stored in Firebase Storage. Page is created with React, React router, TypeScript and Sass/SCSS.
 
-## Available Scripts
+Visit page: **[Fryzjer-frontend](https://grzegorzwirtek.github.io/fryzjer-frontend/)**
 
-In the project directory, you can run:
+## General info
 
-### `npm start`
+I created the website as part of a project involving three parts: backend, CMS and static website. This is a static page, using text data, retrieved from the backend using Axios queries. Images for the site are stored and downloaded from Firebase Storage. The site uses data that a user with permissions can modify on the CMS site. State menagement using React Context API.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Project is created with:
 
-### `npm test`
+- **Sass/SCSS**
+- **react.js** version 18.2.0
+- **react-dom** version 18.2.0
+- **react-router-dom** version 6.3.0
+- **firebase** version 9.9.3
+- **axios** version 0.27.2
+- **gh-pages** version 4.0.0
+- **sass** version 1.54.4
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup
 
-### `npm run build`
+Page is deployed to gh-pages: **[Fryzjer-frontend](https://grzegorzwirtek.github.io/fryzjer-frontend/)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The project can be also run locally using npm (localhost:3000):
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
+$ npm install
+$ npm run start
+```
