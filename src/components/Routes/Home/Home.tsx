@@ -1,7 +1,7 @@
 import './Home.scss';
 import { NavLink } from 'react-router-dom';
 import { useContext } from 'react';
-import AppContext from '../../../AppContext';
+import AppContext from '../../../state/AppContext';
 
 const Home = () => {
 	const {

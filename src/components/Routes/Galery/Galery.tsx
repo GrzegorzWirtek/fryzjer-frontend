@@ -1,7 +1,7 @@
 import './Galery.scss';
 import Spinner from '../../Spinner/Spinner';
 import { useContext } from 'react';
-import AppContext from '../../../AppContext';
+import AppContext from '../../../state/AppContext';
 
 const Galery = () => {
 	const { galery } = useContext(AppContext);
