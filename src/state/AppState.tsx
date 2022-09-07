@@ -1,4 +1,10 @@
-import AppContext, { serviceType, contactType, galeryType } from './AppContext';
+import AppContext from './AppContext';
+import {
+	serviceType,
+	contactType,
+	galeryType,
+	initialState,
+} from './StateTypes';
 import { useEffect, useState } from 'react';
 import * as api from '../api';
 import { ref, listAll, getDownloadURL } from 'firebase/storage';
@@ -11,15 +17,13 @@ type Props = {
 };
 
 const AppState = ({ children }: Props) => {
-	const initialContactData = {} as contactType;
-	const initialServicesData = [] as serviceType[];
-	const initialGaleryData = [] as galeryType;
-
-	const [contactData, setContactData] =
-		useState<contactType>(initialContactData);
-	const [servicesData, setServicesData] =
-		useState<serviceType[]>(initialServicesData);
-	const [galeryData, setGaleryData] = useState<galeryType>(initialGaleryData);
+	const [contactData, setContactData] = useState<contactType>(
+		initialState.contact,
+	);
+	const [servicesData, setServicesData] = useState<serviceType[]>(
+		initialState.services,
+	);
+	const [galeryData, setGaleryData] = useState<galeryType>(initialState.galery);
 
 	useEffect(() => {
 		const getServices = async () => {
