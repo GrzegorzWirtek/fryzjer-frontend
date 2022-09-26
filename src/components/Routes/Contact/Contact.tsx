@@ -1,6 +1,7 @@
 import './Contact.scss';
 import { useContext } from 'react';
 import AppContext from '../../../state/AppContext';
+import Spinner from '../../Spinner/Spinner';
 
 const Contact = () => {
 	const { contact } = useContext(AppContext);
@@ -16,8 +17,10 @@ const Contact = () => {
 		.padStart(5, '0')
 		.slice(0, 2)}-${String(zipCode).padStart(5, '0').slice(2, 5)}`;
 
-	return (
-		<section className='contact'>
+	const contactData =
+		tel === undefined ? (
+			<Spinner />
+		) : (
 			<div className='contact__wrapper'>
 				<h2 className='contact__title'>Kontakt</h2>
 				<p className='contact__street'>
@@ -37,8 +40,9 @@ const Contact = () => {
 					<p className='contact__phone-nr'>{telToString}</p>
 				</a>
 			</div>
-		</section>
-	);
+		);
+
+	return <section className='contact'>{contactData}</section>;
 };
 
 export default Contact;

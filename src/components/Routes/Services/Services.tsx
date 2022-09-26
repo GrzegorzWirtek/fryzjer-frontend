@@ -1,6 +1,7 @@
 import './Services.scss';
 import { useContext } from 'react';
 import AppContext from '../../../state/AppContext';
+import Spinner from '../../Spinner/Spinner';
 
 const Services = () => {
 	const { services } = useContext(AppContext);
@@ -15,10 +16,14 @@ const Services = () => {
 
 	return (
 		<section className='services'>
-			<div className='services__wrapper'>
-				<h2 className='services__title'>Cennik</h2>
-				{prices}
-			</div>
+			{!services.length ? (
+				<Spinner />
+			) : (
+				<div className='services__wrapper'>
+					<h2 className='services__title'>Cennik</h2>
+					{prices}
+				</div>
+			)}
 		</section>
 	);
 };
